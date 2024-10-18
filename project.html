@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/project.css">
+    <title>Project</title>
+</head>
+<body>
+    <nav>
+        <ul style="width: 80%;">
+            <li>
+                <a href="index.html">
+                    <img src="./assets/dw-favicon-final.png">
+                </a>
+            </li>
+            <li class="poppins-bold">
+                <a href="index.html" style="color: black;">
+                    Home
+                </a>
+            </li>
+            <li class="poppins-bold">
+                <a href="project.html" style="color: black;">
+                    Project
+                </a>
+            </li>
+            <li class="poppins-bold" style="width: 85%; display: flex; justify-content: flex-end;">
+                
+                    <a href="form.html">
+                        <button class="btn poppins-bold">Contact</button>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="" onsubmit="createProject(event)">
+            <div class="poppins-bold">
+                <label>Name :</label>
+                <input class="input-text" type="text" id="name" required>
+            </div>
+            <div style="display: flex; gap: 25px;" >
+                <div class="poppins-bold">
+                    <label>Date End:</label>
+                    <input class="input-text" type="date" id="date-start" required>
+                </div>
+                <div class="poppins-bold">
+                    <label>Date end:</label>
+                    <input class="input-text" type="date" id="date-end" required>
+                </div>
+            </div>
+            <div class="poppins-bold">
+                <label>Description :</label>
+                <textarea id="desc" required></textarea>
+            </div>
+            <div class="poppins-bold">
+                <label>Technologies :</label>
+                <div>
+                    <div style="display: flex;">
+                        <input type="checkbox" id="node-js" name="node-js" class="tech" value="Node JS">
+                        <label style="margin-right: 25%;" for="node-js"> Node JS</label>
+                        <input type="checkbox" id="next-js" name="next-js" class="tech" value="Next JS">
+                        <label  for="next-js"> Next JS</label>
+                  
+                    </div>
+                    <div style="display: flex;">
+                        <input type="checkbox" id="react-js" name="react-js" class="tech" value="React JS">
+                        <label style="margin-right: 25%;" for="react-js"> React JS</label>
+                        <input type="checkbox" id="typescript" name="typescript" class="tech" value="TypeScript">
+                        <label for="typescript"> TypeScript</label>
+                    </div>
+                </div>
+               <div style="margin-top: 10px;">
+                <input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="file">
+               </div>
+                <!-- <select class="selection" name="Subject" id="subject" required>
+                    <option value="Fullstack Developer">Fullstack Developer</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                </select> -->
+            </div>
+            
+            <div class="btn-submit poppins-bold" >
+                <button class="btn poppins-bold"id="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="content">
+
+    </div>
+    <!-- <div class="container-card">
+        <div class="picture">
+            <img class="image" src="./assets/IMG_2039.jpg">
+            
+        </div>
+        <div class="detail">
+            <h1 class="poppins-bold"><a href="project-detail.html" style="text-decoration-line: none; color: black;"> Hi, Welcome!</a></h1>
+            <p class="date-info poppins-medium">this is date | author : Yudis Aqsha</p>
+            <p class="textintro poppins-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus dignissim nisl sed rhoncus. Nullam vel mi sed massa tristique accumsan. Donec tellus urna, hendrerit sed nisl ut, vestibulum condimentum neque. Phasellus nec feugiat arcu.
+            </p>
+            <p class="tech-used poppins-bold">This is tech</p>
+                <button class="btn-action poppins-medium">Edit</button>
+                <button class="btn-action poppins-medium" href="#">Delete</button>
+            
+          
+            
+        </div>
+    </div> -->
+    <script src="./js/project.js"></script>
+</body>
+</html>

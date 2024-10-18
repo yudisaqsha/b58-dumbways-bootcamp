@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <ul style="width: 80%;">
+            <li>
+                <a href="index.html">
+                    <img src="./assets/dw-favicon-final.png">
+                </a>
+            </li>
+            <li class="poppins-bold">
+                <a href="index.html" style="color: black;">
+                    Home
+                </a>
+            </li>
+            <li class="poppins-bold">
+                <a href="project.html" style="color: black;">
+                    Project
+                </a>
+            </li>
+            <li class="poppins-bold" style="width: 85%; display: flex; justify-content: flex-end;">
+                
+                    <a href="form.html">
+                        <button class="btn poppins-bold" >Contact</button>
+                    </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="poppins-bold" style="text-align: center;">GET IN TOUCH</h1>
+        <form action="" onsubmit="sendMail(event)">
+            <div class="poppins-bold">
+                <label>Name :</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="poppins-bold">
+                <label>Email :</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="poppins-bold">
+                <label>Number :</label>
+                <input type="text" id="number" required>
+            </div>
+            <div class="poppins-bold">
+                <label>Subject :</label>
+                <select class="selection" name="Subject" id="subject" required>
+                    <option value="Fullstack Developer">Fullstack Developer</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                </select>
+            </div>
+            <div class="poppins-bold">
+                <label>Message :</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="btn-submit poppins-bold" >
+                <button class="poppins-bold"id="btn">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
